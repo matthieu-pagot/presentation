@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets & Études de Cas - Matthieu PAGOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="cv.html">CV Détaillé</a></li>
+            <li><a href="lettre.html">Lettre de motivation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            <li class="auth-container">
+                <a href="#" class="auth-button" id="authToggle">Dashboard Projets</a>
+                <div class="auth-dropdown" id="authDropdown">
+                    <a href="#cybersecurite" class="auth-option">Cyber & Sécurité</a>
+                    <a href="#reseaux" class="auth-option">Infrastructures Réseau</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main style="padding-top: 100px;">
+        <section id="introduction">
+            <h2>Projets Récents & Démonstrations Techniques</h2>
+            <p>
+                Cette section présente des exemples concrets de mes compétences en action, acquises lors de ma formation Bac Pro CIEL et de mes propres initiatives de veille technologique.
+            </p>
+            <p style="color: #00bcd4; font-weight: 600;">
+                Chaque étude de cas démontre ma méthodologie, mon diagnostic, et les outils que j'utilise.
+            </p>
+        </section>
+
+        <section id="cybersecurite">
+            <h2>1. Projet de Sécurité : Mise en place d'un pare-feu (Firewall)</h2>
+            <div class="cv-block">
+                <h3>Objectif & Contexte</h3>
+                <p>Mettre en place et configurer un pare-feu logiciel (ex: pfSense ou iptables sous Linux) pour isoler un sous-réseau et n'autoriser que les ports spécifiques (SSH, HTTPs).</p>
+                <h3>Compétences démontrées</h3>
+                <ul>
+                    <li>Compréhension des modèles OSI et TCP/IP.</li>
+                    <li>Configuration de règles de filtrage d'état (Stateful filtering).</li>
+                    <li>Durcissement (Hardening) de la politique de sécurité par défaut.</li>
+                </ul>
+                <a href="#" class="cv-download" style="padding: 10px 20px;">Voir le Rapport Détaillé (PDF ou GitHub)</a>
+            </div>
+        </section>
+
+        <section id="reseaux">
+            <h2>2. Étude de Cas : Déploiement d'un Serveur Web sur VM</h2>
+            <div class="cv-block">
+                <h3>Objectif & Contexte</h3>
+                <p>Déployer un serveur web complet (Apache/Nginx avec PHP et MySQL) sur une machine virtuelle (VMware/VirtualBox), en assurant l'adressage IP statique et le routage.</p>
+                <h3>Compétences démontrées</h3>
+                <ul>
+                    <li>Administration de systèmes Linux (CLI).</li>
+                    <li>Gestion des services (systemctl) et des ports.</li>
+                    <li>Configuration et dépannage réseau de base.</li>
+                </ul>
+                <a href="#" class="cv-download" style="padding: 10px 20px;">Accéder au Schéma d'Architecture</a>
+            </div>
+        </section>
+        
+        <section id="conclusion">
+            <p style="text-align: center;">
+                <a href="contact.html" class="cv-download">Une question sur un projet ? Contactez-moi !</a>
+            </p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

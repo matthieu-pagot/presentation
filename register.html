@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - Matthieu PAGOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="cv.html">CV Détaillé</a></li>
+            <li><a href="lettre.html">Lettre de motivation</a></li>
+            
+            <li class="auth-container">
+                <a href="#" class="auth-button" id="authToggle">Connexion / Inscription</a>
+                <div class="auth-dropdown" id="authDropdown">
+                    <a href="login.html" class="auth-option">Se Connecter</a>
+                    <a href="register.html" class="auth-option">S'Inscrire</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="register">
+            <h2>Espace Inscription (Démo)</h2>
+            <div class="contact-form-container" style="max-width: 500px; margin: 0 auto;">
+                <p class="contact-info-text" style="color: #00bcd4;">
+                    L'inscription n'est pas nécessaire pour ce portfolio. Toutes les informations sont disponibles via la navigation principale.
+                </p>
+                
+                <div class="form-group">
+                    <label for="email_reg">Email :</label>
+                    <input type="email" id="email_reg" name="email_reg" disabled placeholder="Saisie désactivée">
+                </div>
+                
+                <a href="index.html" class="cv-download form-submit-btn">Retour à la page d'accueil</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
