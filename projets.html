@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Matthieu Pagot</title>
+<meta name="description" content="Projets techniques de Matthieu Pagot : écran d'information dynamique sous Raspberry Pi et infrastructure réseau sécurisée avec pointage RFID.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projets — Matthieu Pagot">
+<meta property="og:description" content="Écran d'information sous Raspberry Pi et infrastructure réseau sécurisée avec pointage RFID.">
+<meta property="og:url" content="https://matthieu-pagot.github.io/presentation/projets.html">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Matthieu Pagot</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a class="navlink" href="index.html">Accueil</a></li>
+        <li><a class="navlink" href="cv.html">CV</a></li>
+        <li><a class="navlink" href="projets.html" aria-current="page">Projets</a></li>
+        <li><a class="navlink" href="lettre.html">Lettre de motivation</a></li>
+        <li><a class="navlink" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-reveal">
+    <h1>Projets</h1>
+    <p class="role">Ce que j'ai construit, et comment</p>
+    <p class="pitch">
+      Chaque projet décrit le contexte réel, ce que j'ai fait moi-même et ce que
+      j'en ai retenu. Je préfère montrer peu de choses expliquées en détail que
+      beaucoup de titres sans contenu.
+    </p>
+    <div class="portstrip" aria-hidden="true"></div>
+  </div>
+</section>
+
+<main id="contenu">
+  <div class="wrap single">
+
+    <section class="block">
+      <h2>LycéeBoard — écran d'information dynamique</h2>
+
+      <article class="project">
+        <h3>Un affichage que le secrétariat peut alimenter seul</h3>
+        <p class="meta">Chef-d'œuvre du Bac Pro CIEL · École Modèle d'Électronique, Marseille · 2025–2026 · équipe de 3</p>
+
+        <h4>Le besoin</h4>
+        <p>
+          Le lycée affichait ses informations sur des panneaux papier, mis à jour à la
+          main et rarement à jour. L'objectif était de mettre en place un écran que le
+          secrétariat puisse alimenter lui-même, sans passer par un technicien.
+        </p>
+
+        <!-- À COMPLÉTER : mets une photo de l'écran installé dans le lycée.
+             1. Enregistre l'image dans assets/images/lyceeboard.jpg
+             2. Décommente le bloc <figure> ci-dessous
+             3. Supprime la div.todo
+
+        <figure class="figure">
+          <img src="assets/images/lyceeboard.jpg" alt="L'écran d'information installé dans le hall du lycée">
+          <figcaption>L'écran en service dans le hall de l'établissement.</figcaption>
+        </figure>
+        -->
+        <div class="todo">
+          <strong>À compléter — photo</strong>
+          <p>Une photo de l'écran installé, en vrai, dans le lycée. C'est l'élément le plus convaincant de tout le site.</p>
+        </div>
+
+        <h4>La solution technique</h4>
+        <ul>
+          <li>Raspberry Pi configuré en mode affichage permanent</li>
+          <li>Raccordement et adressage sur le réseau de l'établissement</li>
+          <li>Interface d'affichage des informations mise au point et testée sur place</li>
+        </ul>
+
+        <h4>La partie dont je suis le plus content</h4>
+        <p>
+          La documentation. J'ai écrit deux manuels au lieu d'un : une version technique
+          pour l'administrateur système et réseau du lycée, qui doit pouvoir reprendre
+          l'installation si quelque chose casse, et une version courte pour la secrétaire,
+          qui a juste besoin de savoir comment publier une information. Écrire pour deux
+          publics qui n'ont pas du tout le même niveau technique m'a demandé plus de
+          travail que la configuration elle-même.
+        </p>
+
+        <p class="meta">Projet mené avec Théo Gaudino et Gianni Sgro.</p>
+      </article>
+    </section>
+
+    <section class="block">
+      <h2>Infrastructure réseau sécurisée et pointage RFID</h2>
+
+      <article class="project">
+        <h3>Concevoir le réseau d'un établissement de zéro</h3>
+        <p class="meta">Projet d'étude · établissement scolaire fictif</p>
+
+        <h4>Le scénario</h4>
+        <p>
+          Concevoir et déployer l'infrastructure réseau complète d'un établissement
+          scolaire imaginaire, avec les contraintes réelles du métier : séparer les flux
+          administratifs, pédagogiques et invités, et empêcher que la compromission d'un
+          poste élève donne accès aux données de l'administration.
+        </p>
+
+        <!-- À COMPLÉTER : mets ici le schéma d'architecture réseau.
+             Exporte-le depuis Packet Tracer, draw.io ou GNS3 en PNG.
+             1. Enregistre l'image dans assets/images/schema-reseau.png
+             2. Décommente le bloc <figure> ci-dessous
+             3. Supprime la div.todo
+
+        <figure class="figure">
+          <img src="assets/images/schema-reseau.png" alt="Schéma de l'architecture réseau : VLAN par service, routeur, pare-feu et lecteurs RFID">
+          <figcaption>Architecture réseau de l'établissement : segmentation en VLAN et flux autorisés entre services.</figcaption>
+        </figure>
+        -->
+        <div class="todo">
+          <strong>À compléter — schéma réseau</strong>
+          <p>Le schéma d'architecture avec tes VLAN, ton plan d'adressage et tes règles de filtrage. Pour une candidature en réseau, c'est la meilleure preuve que tu sais faire.</p>
+        </div>
+
+        <h4>Ce que j'ai mis en place</h4>
+        <ul>
+          <li>Segmentation du réseau en VLAN par service</li>
+          <li>Routage inter-VLAN et règles de filtrage entre les segments</li>
+          <li>Plan d'adressage et attribution automatique par DHCP</li>
+          <li>Système de gestion des présences par badges RFID, de la lecture du badge à l'enregistrement côté serveur</li>
+        </ul>
+
+        <p class="note">
+          Vérifie cette liste et retire ce que tu n'as pas fait toi-même : c'est le genre
+          de détail sur lequel on te fera creuser en entretien.
+        </p>
+
+        <h4>Ce que ça m'a appris</h4>
+        <p>
+          C'est le projet qui m'a fait comprendre que la sécurité d'un réseau se décide
+          au moment de le dessiner, pas après. Une fois le plan d'adressage posé et les
+          VLAN attribués, la plupart des règles de filtrage découlent naturellement de
+          la structure.
+        </p>
+      </article>
+    </section>
+
+    <section class="block">
+      <h2>Projet personnel</h2>
+
+      <article class="project draft">
+        <h3>Réseau domestique et auto-hébergement</h3>
+        <p class="meta">En cours, chez moi</p>
+        <p>
+          J'administre mon propre réseau domestique et un serveur d'auto-hébergement sous
+          CasaOS, pour comprendre concrètement ce qui tourne derrière un service en ligne
+          et pour tester chez moi ce que je vois en cours.
+        </p>
+        <div class="todo">
+          <strong>À compléter</strong>
+          <p>Sur quel matériel, quels services tu héberges, et une difficulté que tu as rencontrée et résolue. Une anecdote technique précise vaut mieux qu'une liste d'outils.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="block">
+      <h2>Une question sur un projet ?</h2>
+      <p>Je peux détailler n'importe lequel de ces projets, schémas à l'appui.</p>
+      <p><a class="cta" href="contact.html">Me contacter</a></p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Matthieu Pagot — Marseille · Mis à jour en septembre 2026</p>
+    <ul>
+      <li><a href="https://github.com/matthieu-pagot">GitHub</a></li>
+      <!-- À COMPLÉTER : décommente et colle l'adresse de ton profil LinkedIn.
+      <li><a href="https://www.linkedin.com/in/TON-PROFIL/">LinkedIn</a></li>
+      -->
+      <li><a href="mailto:matthieu.pagot@lpo-eme.fr">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
